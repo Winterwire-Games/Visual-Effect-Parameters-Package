@@ -1,0 +1,16 @@
+{
+	"name": "com.winterwiregames.visualeffectparameters",
+	"version": "0.1.0",
+	"displayName": "Visual Effect Parameters",
+	"description": "A collection of components designed to make interfacing with visual effect parameters easier.",
+	"author": {
+		"name": "Rhys Mader",
+		"email": "rhys.mader@winterwiregames.com",
+		"url": "https://www.winterwiregames.com"
+	},
+	"keywords": [
+		"visual effect",
+		"parameters"
+	],
+	"license": "GPL-3.0-only"
+}
