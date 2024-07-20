@@ -75,5 +75,12 @@ namespace WiniterwireGames.VisualEffectParameters
 			set => this.SetValue(this.VisualEffect, this.ParameterIds, value);
 		}
 		#endregion
+
+		#region Unity Messages
+		private void OnValidate()
+		{
+			this.UpdateIds();
+		}
+		#endregion
 	}
 }
