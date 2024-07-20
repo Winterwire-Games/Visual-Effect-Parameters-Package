@@ -1,6 +1,6 @@
 {
 	"name": "com.winterwiregames.visualeffectparameters",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"displayName": "Visual Effect Parameters",
 	"description": "A collection of components designed to make interfacing with visual effect parameters easier.",
 	"author": {
