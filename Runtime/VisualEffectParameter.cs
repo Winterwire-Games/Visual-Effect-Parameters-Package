@@ -43,7 +43,17 @@ namespace WiniterwireGames.VisualEffectParameters
 		#endregion
 
 		#region Parameter Ids
-		public IReadOnlyList<int> ParameterIds { get; private set; }
+		private IReadOnlyList<int> _parameterIds;
+		public IReadOnlyList<int> ParameterIds 
+		{ 
+			get
+			{
+				if (this._parameterIds == null)
+					this.UpdateIds();
+				return this._parameterIds;
+			}
+			private set => this._parameterIds = value;
+		}
 
 		public void UpdateIds()
 		{
@@ -63,13 +73,6 @@ namespace WiniterwireGames.VisualEffectParameters
 		{
 			get => this.GetValue(this.VisualEffect, this.ParameterIds);
 			set => this.SetValue(this.VisualEffect, this.ParameterIds, value);
-		}
-		#endregion
-
-		#region Unity Messages
-		private void Awake()
-		{
-			this.UpdateIds();
 		}
 		#endregion
 	}
